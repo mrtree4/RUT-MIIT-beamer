@@ -49,7 +49,7 @@
 \frametitle{Библигорафия. Программный пакет BibLaTeX}
 \framesubtitle{Особенности подготовки научных статей в \LaTeX{}}
 BibLaTeX --- менеджер библиографии.
-Состоит из утилиты для работы с \textit{.bib} файлами \textbf{biber} и пакета \textbf{biblatex}.
+Состоит из утилиты для работы с \texttt{.bib} файлами \textbf{biber} и пакета \textbf{biblatex}.
 Алгоритм работы менеджера библиографии:
 \begin{enumerate} 
 \item программа \textbf{xelatex} обнаруживает ссылки (команды \texttt{\textbf{\textbackslash cite}}) и подключенные источники в формате в документе и по результатам формирует запрос;
@@ -60,45 +60,25 @@ BibLaTeX --- менеджер библиографии.
 \end{frame}
 
 \begin{frame}
-\frametitle{Слайд с двумя колонками текста}
-	 \begin{columns}
-	 \column{0.5\textwidth}
-		\begin{enumerate} 
-		\item Первый пункт:
-		\begin{itemize}
-			\item подпункт 1;
-			\item подпункт 2.
-		\end{itemize}
-		\item Второй пункт
-		\begin{enumerate}
-			\item нумерованный подпункт.
-		\end{enumerate} 
-		\item Третий пункт
-	\end{enumerate} 
-	\column{0.5\textwidth}
-	\begin{itemize}
-		\item Первый пункт:
-		\begin{itemize}
-			\item подпункт 1;
-			\item подпункт 2.
-		\end{itemize}
-		\item Второй пункт
-		\begin{enumerate}
-			\item нумерованный подпункт.
-		\end{enumerate}
-		\item Третий пункт
-	\end{itemize}
-	\end{columns}
+\frametitle{Пример использования BibLaTeX}
+\framesubtitle{Особенности подготовки научных статей в \LaTeX{}}
 \end{frame}
 
 \begin{frame}
-\frametitle{Слайд с картинкой}
+\frametitle{Пример использования BibLaTeX}
+\framesubtitle{Особенности подготовки научных статей в \LaTeX{}}
 \medskip
 	 \begin{columns}
 	 \column{0.5\textwidth}
-		Текст рядом с картинкой
+		\usepackage{listings}
+\begin{lstlisting}[language={[LaTeX]TeX}]
+\documentclass{article}
+\begin{document}
+Hello, world!
+\end{document}
+\end{lstlisting}
 		\column{0.5\textwidth}
-		\includegraphics[width=\columnwidth]{image1}
+		\includegraphics[width=\columnwidth]{BibLatexEx}
 	\end{columns}
 \end{frame}
 
