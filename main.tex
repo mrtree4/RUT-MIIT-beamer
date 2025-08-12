@@ -37,43 +37,26 @@
 \frame[plain]{\titlepage}	% Титульный слайд
 
 \begin{frame}
-\frametitle{Просто слайд с текстом}
-\framesubtitle{Подзаголовок слайда}
-	\blindtext
+\frametitle{План лекции}
+\begin{enumerate} 
+\item Особенности подготовки научных статей в \LaTeX{}
+\item Ссылки на элементы документа
+\item Использование системы контроля версий
+\end{enumerate} 
 \end{frame}
 
 \begin{frame}
-\frametitle{Список}
-\framesubtitle{Нумерованный список}
-	\begin{enumerate} 
-		\item Первый пункт:
-		\begin{itemize}
-			\item подпункт 1;
-			\item подпункт 2.
-		\end{itemize}
-		\item Второй пункт
-		\begin{enumerate}
-			\item нумерованный подпункт.
-		\end{enumerate} 
-		\item Третий пункт
-	\end{enumerate} 
-\end{frame}
-
-\begin{frame}
-\frametitle{Список}
-\framesubtitle{Маркированный список}
-	\begin{itemize}
-		\item Первый пункт:
-		\begin{itemize}
-			\item подпункт 1;
-			\item подпункт 2.
-		\end{itemize}
-		\item Второй пункт
-		\begin{enumerate}
-			\item нумерованный подпункт.
-		\end{enumerate}
-		\item Третий пункт
-	\end{itemize}
+\frametitle{Библигорафия. Программный пакет BibLaTeX}
+\framesubtitle{Особенности подготовки научных статей в \LaTeX{}}
+BibLaTeX --- менеджер библиографии.
+Состоит из утилиты для работы с \textit{.bib} файлами \textbf{biber} и пакета \textbf{biblatex}.
+Алгоритм работы менеджера библиографии:
+\begin{enumerate} 
+\item программа \textbf{xelatex} обнаруживает ссылки (команды \textbf{\\cite}) и подключенные источники в формате в документе и по результатам формирует запрос;
+\item программа \textbf{biber} формирует в ответ на запрос LaTeX-файл с нужными библиографическими данными;
+\item программа \textbf{xelatex} выполняет проход для расстановки ссылок и добавления списка литературы в документ;
+\item программа \textbf{xelatex} выполняет дополнительный проход для перерасстановки номеров страниц и внутренних ссылок в документе.
+\end{enumerate} 
 \end{frame}
 
 \begin{frame}
