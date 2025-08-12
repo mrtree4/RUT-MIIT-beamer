@@ -1,29 +1,17 @@
-%!TEX TS-program = xelatex
-
-% Официальный шаблон презентации НИУ ВШЭ в beamer (LaTeX)
-% Версия 2.0
-% Язык — русский   
-% Автор шаблона - Данил Фёдоровых (fedorovykh@gmail.com)
-
-%%% Для корректной работы шаблона необходима 
-%%% установка в систему бесплатного шрифта HSE Sans
-%%% https://www.hse.ru/info/brandbook/#font
-
-
 \documentclass[aspectratio=169]{beamer}
 
 \newbool{russian}
 \booltrue{russian}  % Загружает русскоязычный логотип ВШЭ
-\usepackage{HSE-theme/beamerthemeHSE} % Подгружаем тему
+\usepackage{theme/theme} % Подгружаем тему
 
 %%% Работа с русским языком и шрифтами
 \usepackage[english,russian]{babel}   % загружает пакет многоязыковой вёрстки
 \usepackage[no-math]{fontspec}      % подготавливает загрузку шрифтов Open Type, True Type и др.
-	\setsansfont{HSE Sans} 
+	\setsansfont{DejaVu Sans} 
 	\setmonofont{Courier New}
 \usepackage{mathspec}
-	\setmathsfont(Digits,Latin,Greek)[Numbers={Lining,Proportional}]{HSE Sans}
-	\setmathrm[Numbers={Lining,Proportional}]{HSE Sans}
+	\setmathsfont(Digits,Latin,Greek)[Numbers={Lining,Proportional}]{DejaVu Sans}
+	\setmathrm[Numbers={Lining,Proportional}]{DejaVu Sans}
 \uselanguage{russian}
 \languagepath{russian}
 \deftranslation[to=russian]{Theorem}{Теорема}
@@ -134,6 +122,7 @@
 \begin{frame}
 \frametitle{Блоки}
 	\begin{theorem}[Пифагора]
+		Пифагоровы штаны во все стороны равны!!!
 		Если $a$ и $b$ "--- длины катетов прямоугольного треугольника, а~$c$ "--- длина гипотенузы, то $a^2+b^2=c^2$.
 	\end{theorem}
 

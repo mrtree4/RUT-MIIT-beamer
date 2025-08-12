@@ -1,14 +1,3 @@
-
-% Официальный шаблон презентации НИУ ВШЭ в beamer (LaTeX)
-% Версия 2.0
-% Язык — русский
-% Автор шаблона - Данил Фёдоровых (fedorovykh@gmail.com)
-
-%%% Для корректной работы шаблона необходима 
-%%% установка в систему бесплатного шрифта HSE Sans
-%%% https://www.hse.ru/info/brandbook/#font
-
-
 %%% Loading packages useful for typesetting our slides
 \usepackage{wrapfig}
 \usepackage{xcolor}
@@ -16,7 +5,7 @@
 \usepackage{hyperref} 
 \urlstyle{same} 
 
-\ProvidesPackage{beamerthemeHSE}[2021/01/17] % Defines the theme HSE
+\ProvidesPackage{theme}[2021/01/17] % Defines the theme
 
 \usefonttheme{default} % Font theme
 
@@ -70,7 +59,7 @@
 
 %%% Layout issues
 
-\setbeamertemplate{headline}{\vspace{0.02\textwidth}\hspace{0.05\textwidth}\includegraphics[width=0.06\textwidth]{HSE-theme/01_Znak_CMYK}}
+\setbeamertemplate{headline}{\vspace{0.02\textwidth}\hspace{0.05\textwidth}\includegraphics[width=0.06\textwidth]{theme/label}}
 
 \setbeamertemplate{frametitle}{%
   \vspace*{-4ex}
@@ -107,7 +96,7 @@
   \begin{columns}
     \column{0.25\textwidth}
         \hspace{0.015\textwidth}
-        \ifbool{russian}{\includegraphics[height=0.2\paperheight]{HSE-theme/01_Logo_HSE_full_rus_CMYK}}{\includegraphics[height=0.2\paperheight]{HSE-theme/01_Logo_HSE_full_eng_CMYK}}
+        \ifbool{russian}{\includegraphics[height=0.2\paperheight]{theme/logo}}{\includegraphics[height=0.2\paperheight]{theme/logo}}
     \column{0.333\textwidth}
         \begin{beamercolorbox}{institute}
           \usebeamerfont{institute}\footnotesize\insertinstitute
