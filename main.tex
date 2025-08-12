@@ -1,5 +1,6 @@
 \documentclass[aspectratio=169]{beamer}
 
+\usepackage{tikz}
 \newbool{russian}
 \booltrue{russian}  % Загружает русскоязычный логотип
 \usepackage{theme/theme} % Подгружаем тему
@@ -72,7 +73,9 @@ BibLaTeX --- менеджер библиографии.
 \column{0.5\textwidth}
 Hello, world!
 \column{0.5\textwidth}
-\includegraphics[width=\columnwidth]{BibLatexEx}
+\begin{tikzpicture}
+  \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexEx}};
+\end{tikzpicture}
 \end{columns}
 \end{frame}
 
