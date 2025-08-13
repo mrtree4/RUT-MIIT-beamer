@@ -2,6 +2,7 @@
 
 \usepackage{tikz}
 \usepackage{caption}
+\setbeamertemplate{caption}[numbered] % Включаем нумерацию для подписей
 \newbool{russian}
 \booltrue{russian}  % Загружает русскоязычный логотип
 \usepackage{theme/theme} % Подгружаем тему
@@ -16,13 +17,6 @@
 	\setmathrm[Numbers={Lining,Proportional}]{Liberation Sans}
 \uselanguage{russian}
 \languagepath{russian}
-%\deftranslation[to=russian]{Theorem}{Теорема}
-%\deftranslation[to=russian]{Definition}{Определение}
-%\deftranslation[to=russian]{Definitions}{Определения}
-%\deftranslation[to=russian]{Corollary}{Следствие}
-%\deftranslation[to=russian]{Fact}{Факт}
-%\deftranslation[to=russian]{Example}{Пример}
-%\deftranslation[to=russian]{Examples}{Примеры}
 \graphicspath{{images/}}  	% Папка с картинками
 
 %%% Информация об авторе и выступлении
@@ -74,10 +68,12 @@ BibLaTeX --- менеджер библиографии.
   \caption{Пример исходного кода с использованием BibLaTeX}
 \end{figure}
 \column{0.5\textwidth}
-\begin{tikzpicture}
-  \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexRes}};
-\end{tikzpicture}
-%  \caption{Результат сборки}
+\begin{figure}
+  \centering
+  \begin{tikzpicture}
+    \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexRes}};
+  \end{tikzpicture}
+  \caption{Результат сборки}
 \end{columns}
 \end{frame}
 
