@@ -15,15 +15,13 @@
 	\setmathrm[Numbers={Lining,Proportional}]{Liberation Sans}
 \uselanguage{russian}
 \languagepath{russian}
-\deftranslation[to=russian]{Theorem}{Теорема}
-\deftranslation[to=russian]{Definition}{Определение}
-\deftranslation[to=russian]{Definitions}{Определения}
-\deftranslation[to=russian]{Corollary}{Следствие}
-\deftranslation[to=russian]{Fact}{Факт}
-\deftranslation[to=russian]{Example}{Пример}
-\deftranslation[to=russian]{Examples}{Примеры}
-
-\usepackage{blindtext} 		% Случайный текст
+%\deftranslation[to=russian]{Theorem}{Теорема}
+%\deftranslation[to=russian]{Definition}{Определение}
+%\deftranslation[to=russian]{Definitions}{Определения}
+%\deftranslation[to=russian]{Corollary}{Следствие}
+%\deftranslation[to=russian]{Fact}{Факт}
+%\deftranslation[to=russian]{Example}{Пример}
+%\deftranslation[to=russian]{Examples}{Примеры}
 \graphicspath{{images/}}  	% Папка с картинками
 
 %%% Информация об авторе и выступлении
@@ -39,10 +37,11 @@
 
 \begin{frame}
 \frametitle{План лекции}
-\begin{enumerate} 
-\item Особенности подготовки научных статей в \LaTeX{}
-\item Ссылки на элементы документа
-\item Использование системы контроля версий
+	\begin{enumerate} 
+	\item Особенности подготовки научных статей в \LaTeX{}
+	\item Ссылки на элементы документа
+	\item Использование системы контроля версий
+ 	\item Домашнее задание
 \end{enumerate} 
 \end{frame}
 
@@ -63,17 +62,15 @@ BibLaTeX --- менеджер библиографии.
 
 \begin{frame}
 \frametitle{Пример использования BibLaTeX}
-\end{frame}
-
-\begin{frame}
-\frametitle{Пример использования BibLaTeX}
 \medskip
 \begin{columns}
 \column{0.5\textwidth}
-sss
+\begin{tikzpicture}
+  \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexCode}};
+\end{tikzpicture}
 \column{0.5\textwidth}
 \begin{tikzpicture}
-  \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexEx}};
+  \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexRes}};
 \end{tikzpicture}
 \end{columns}
 \end{frame}
