@@ -3,7 +3,7 @@
 \usepackage{tikz}
 \usepackage{caption}
 \usepackage{colortbl}
-\setbeamertemplate{caption}[numbered] % Включаем нумерацию для подписей
+\setbeamertemplate{caption}[numbered]
 \newbool{russian}
 \booltrue{russian}  % Загружает русскоязычный логотип
 \usepackage{theme/theme} % Подгружаем тему
@@ -152,6 +152,20 @@ none           & сортировка по порядку цитирования
 \begin{exampleblock}{Позиционирование}
 Управлять размерами изобращений можно при помощи параметров \textbf{scale}, \textbf{width}, \textbf{height}.
 Вместо конкретных численных значений ширины можно, например, задавать размер по ширине текста через \texttt{\textbf{width = \textbackslash textwidth}}.
+\end{exampleblock}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Картинки}
+\begin{exampleblock}{Позиционирование}
+Управлять размерами изобращений можно при помощи параметров \textbf{scale}, \textbf{width}, \textbf{height}.
+Вместо конкретных численных значений ширины можно, например, задавать размер по ширине текста через \texttt{\textbf{width = \textbackslash textwidth}}.
+\end{exampleblock}
+\begin{exampleblock}{Подписи}
+Подписи добавляющие краткое описание к изображениям.
+Вызываются командой \texttt{\textbf{\textbackslash caption}}, которой в качестве параметра передаётся непсоредственно сам текст подписи.
+Подписи также поддреживают автонумерацию.
 \end{exampleblock}
 \end{frame}
 
