@@ -2,6 +2,7 @@
 
 \usepackage{tikz}
 \usepackage{caption}
+\usepackage{colortbl}
 \setbeamertemplate{caption}[numbered] % Включаем нумерацию для подписей
 \newbool{russian}
 \booltrue{russian}  % Загружает русскоязычный логотип
@@ -61,21 +62,42 @@ BibLaTeX --- менеджер библиографии.
 \begin{columns}
 \column{0.5\textwidth}
 \begin{figure}
-  \centering
-  \begin{tikzpicture}
-    \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexCode}};
-  \end{tikzpicture}
-  \caption{Пример исходного кода с использованием BibLaTeX}
+\centering
+\begin{tikzpicture}
+\node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexCode}};
+\end{tikzpicture}
+\caption{Пример исходного кода с использованием BibLaTeX}
 \end{figure}
 \column{0.5\textwidth}
 \begin{figure}
-  \centering
-  \begin{tikzpicture}
-    \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexRes}};
-  \end{tikzpicture}
-  \caption{Результат сборки}
+\centering
+\begin{tikzpicture}
+\node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexRes}};
+\end{tikzpicture}
+\caption{Результат сборки}
 \end{figure}
 \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Способы управления библиографией}
+Выбор стиля осуществляется через параметр \texttt{style=\texit{stylename}} при вызове \texttt{\textbf{\textbackslash usepackage}}).
+Параметр \texttt{sorting=\texit{sortname}} определяет критерий сортировки источников в библиографическом списке.
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
+\begin{table}[]
+\begin{tabular}{
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}l }
+{\color[HTML]{1B222C} \textbf{опция}} & {\color[HTML]{1B222C} \textbf{характеристика}}                   \\ \hline
+{\color[HTML]{495365} nty}            & {\color[HTML]{1B222C} сортировка по имени, названию, году}       \\
+{\color[HTML]{495365} nyt}            & {\color[HTML]{1B222C} сортировка по имени, году, названию}       \\
+{\color[HTML]{495365} nyvt}           & {\color[HTML]{1B222C} сортировка по имени, году, тому, названию} \\
+{\color[HTML]{495365} ...}            & {\color[HTML]{1B222C} и иные комбинации этих букв}               \\
+{\color[HTML]{495365} none}           & {\color[HTML]{1B222C} сортировка по порядку цитирования}        
+\end{tabular}
+\end{table}
 \end{frame}
 
 \begin{frame}
