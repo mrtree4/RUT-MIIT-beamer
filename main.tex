@@ -139,17 +139,17 @@ none           & сортировка по порядку цитирования
 \begin{frame}
 \frametitle{Работа с изображениями}
 \LaTeX{} не может самостоятельно управлять изображениями, поэтому необходимо использовать пакет \textbf{graphicx}.
-\begin{exampleblock}
-Команда \texttt{\textbf{\textbackslash graphicspath}} сообщает \LaTeX{}, что изображения хранятся в папке с именем images в директории основного документа.
+\begin{exampleblock}}{Каталог изображений}
+Команда \texttt{\textbf{\textbackslash graphicspath}} сообщает \LaTeX{}, что изображения хранятся в каталоге, имя которого передано в качестве параметра.
 \end{exampleblock}
 
-\begin{exampleblock}
+\begin{exampleblock}{Включение изображения}
 Команда \texttt{\textbf{\textbackslash includegraphics}} непосредственно включает изображение в документ.
 В качестве параметра ей передаётся имя файла с изображением без расширения.
 Имя файла с изображением не должно содержать пробелов и многоточий.
 \end{exampleblock}
 
-\begin{exampleblock}
+\begin{exampleblock}{Позиционирование}
 Управлять размерами изобращений можно при помощи параметров \textbf{scale}, \textbf{width}, \textbf{height}.
 Вместо конкретных численных значений ширины можно, например, задавать размер по ширине текста через \texttt{\textbf{width = \textbackslash textwidth}}.
 \end{exampleblock}
