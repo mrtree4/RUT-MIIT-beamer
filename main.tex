@@ -1,10 +1,6 @@
 \documentclass[aspectratio=169]{beamer}
 
 \usepackage{tikz}
-\usepackage{minted}
-\usepackage{listings}
-\usepackage{lstfiracode}
-
 \newbool{russian}
 \booltrue{russian}  % Загружает русскоязычный логотип
 \usepackage{theme/theme} % Подгружаем тему
@@ -42,7 +38,7 @@
 \frame[plain]{\titlepage}	% Титульный слайд
 
 \begin{frame}
-\frametitle{План лекции!!!}
+\frametitle{План лекции}
 \begin{enumerate} 
 \item Особенности подготовки научных статей в \LaTeX{}
 \item Ссылки на элементы документа
@@ -74,19 +70,7 @@ BibLaTeX --- менеджер библиографии.
 \medskip
 \begin{columns}
 \column{0.5\textwidth}
-
-\begin{code}
-		\begin{minted}{ruby}
-class Foo
-def init
-pi = Math::PI
-@var = "Pi = #{pi}..."
-end
-end
-\end{minted}
-		\caption{Да, это опять функциональный код.}
-	\end{code}
-
+sss
 \column{0.5\textwidth}
 \begin{tikzpicture}
   \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{BibLatexEx}};
