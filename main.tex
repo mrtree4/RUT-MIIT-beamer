@@ -169,10 +169,33 @@ none           & сортировка по порядку цитирования
 Те же команды применимы и к окружению рисунков.
 Оперирует тремя основными компонентами:
 \begin{itemize}
-\item \texttt{\textbf{\textbackslash label \{ marker \}}} --- маркер можно рассматривать как имя, которое мы даем объекту, на который хотим сослаться. Важно добавить \label после нумерованного элемента, например, иначе метка не сможет «зацепиться» за нужный номер или счетчик.
-\item \texttt{\textbf{\textbackslash ref \{ marker \}}} --- выводит номер, присвоенный объекту, помеченному маркером.
-\item \texttt{\textbf{\textbackslash pageref \{ marker \}}} --- выводит номер страницы, на которой появился объект, помеченный маркером.
+\item \texttt{\textbf{\textbackslash label\{marker\}}} --- маркер можно рассматривать как имя, которое мы даем объекту, на который хотим сослаться. Важно добавить \label после нумерованного элемента, например, иначе метка не сможет «зацепиться» за нужный номер или счетчик.
+\item \texttt{\textbf{\textbackslash ref\{marker\}}} --- выводит номер, присвоенный объекту, помеченному маркером.
+\item \texttt{\textbf{\textbackslash pageref\{marker\}}} --- выводит номер страницы, на которой появился объект, помеченный маркером.
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Пример}
+\medskip
+\begin{columns}
+\column{0.5\textwidth}
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{labelCode}};
+\end{tikzpicture}
+\caption{Ссылаемся на первую формулу}
+\end{figure}
+\column{0.5\textwidth}
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{labelRes}};
+\end{tikzpicture}
+\caption{Результат сборки}
+\end{figure}
+\end{columns}
 \end{frame}
 
 %\begin{frame}
