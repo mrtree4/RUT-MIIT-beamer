@@ -131,7 +131,7 @@ none           & сортировка по порядку цитирования
 \begin{tikzpicture}
 \node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{bibArticle}};
 \end{tikzpicture}
-\caption{Параметры библиографического описания типа <<Статья>>}
+\caption{Параметры <<Статьи>>}
 \end{figure}
 \end{columns}
 \end{frame}
@@ -139,15 +139,20 @@ none           & сортировка по порядку цитирования
 \begin{frame}
 \frametitle{Работа с изображениями}
 \LaTeX{} не может самостоятельно управлять изображениями, поэтому необходимо использовать пакет \textbf{graphicx}.
-
+\begin{exampleblock}
 Команда \texttt{\textbf{\textbackslash graphicspath}} сообщает \LaTeX{}, что изображения хранятся в папке с именем images в директории основного документа.
+\end{exampleblock}
 
-Команда \texttt{\textbf{\textbackslash}} непосредственно включает изображение в документ.
+\begin{exampleblock}
+Команда \texttt{\textbf{\textbackslash includegraphics}} непосредственно включает изображение в документ.
 В качестве параметра ей передаётся имя файла с изображением без расширения.
 Имя файла с изображением не должно содержать пробелов и многоточий.
+\end{exampleblock}
 
-Управлять размерами изобращений можно при помощи параметров scale, width, height.
+\begin{exampleblock}
+Управлять размерами изобращений можно при помощи параметров \textbf{scale}, \textbf{width}, \textbf{height}.
 Вместо конкретных численных значений ширины можно, например, задавать размер по ширине текста через \texttt{\textbf{width = \textbackslash textwidth}}.
+\end{exampleblock}
 \end{frame}
 
 \begin{frame}
