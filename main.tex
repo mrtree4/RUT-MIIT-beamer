@@ -4,6 +4,7 @@
 \usepackage{caption}
 \usepackage{colortbl}
 \usepackage{qrcode}
+\usepackage{hyperref}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{section in toc}[sections numbered]
 \newbool{russian}
@@ -316,7 +317,8 @@ none           & сортировка по порядку цитирования
 \column{0.5\textwidth}
 Данная презентация подготовлена с использованием СКВ \textbf{git}. Справа приведена ссылка на соответсвующий репозиторий на платформе <<GitHub>>.
 \column{0.5\textwidth}
-\qrcode[height=3cm]{https://github.com/mrtree4/RUT-MIIT-beamer}
+\qrset{link, height=3cm}
+\qrcode{https://github.com/mrtree4/RUT-MIIT-beamer}
 \end{columns}
 \end{frame}
 
