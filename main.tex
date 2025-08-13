@@ -3,6 +3,7 @@
 \usepackage{tikz}
 \usepackage{caption}
 \usepackage{colortbl}
+\usepackage{qrcode}
 \setbeamertemplate{caption}[numbered]
 \newbool{russian}
 \booltrue{russian}  % Загружает русскоязычный логотип
@@ -259,16 +260,84 @@ none           & сортировка по порядку цитирования
 \medskip
 \begin{columns}
 \column{0.5\textwidth}
-Пример графа истории проекта с контролем ревизий; ствол - зелёный, ветви - жёлтый, а граф не является деревом из-за наличия слияний (красные стрелки).
+Пример графа истории проекта с контролем ревизий; ствол --- зелёный, ветви ---- жёлтый, а граф не является деревом из-за наличия слияний (красные стрелки).
 \column{0.5\textwidth}
 \begin{figure}
 \centering
 \begin{tikzpicture}
-\node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[width=\columnwidth]{vcsEx}};
+\node[draw=black, line width=1pt, inner sep=0pt] {\includegraphics[height=\columnheight]{vcsEx}};
 \end{tikzpicture}
 \end{figure}
 \end{columns}
 \end{frame}
 
+\begin{frame}
+\frametitle{Основные команды СКВ \textbf{git}}
+\begin{alertblock}{git init}
+Создает новый локальный репозиторий в текущей директории.
+\end{alertblock}
+\begin{alertblock}{git clone \textit{url}}
+Клонирует удаленный репозиторий на локальный компьютер.
+\end{alertblock}
+\begin{alertblock}{git add \textit{filename}}
+Добавляет изменения в указанных файлах в индекс для последующего коммита.
+\end{alertblock}
+\begin{alertblock}{git commit -m "message"}
+Фиксирует изменения в индексе с сообщением о коммите.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{Команды для работы с ветками}
+\begin{alertblock}{git branch}
+Показывает список всех веток в репозитории. Если указать имя ветки, команда создаст новую ветку.
+\end{alertblock}
+\begin{alertblock}{git checkout \textit{branch}}
+Переключает на указанную ветку.
+\end{alertblock}
+\begin{alertblock}{git merge \textit{branch}}
+Объединяет изменения из указанной ветки в текущую ветку.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{Команды для работы с удаленными репозиториями}
+\begin{alertblock}{git remote}
+Показывает список удаленных репозиториев. Можно использовать с параметрами для добавления, удаления или изменения удаленных репозиториев.
+\end{alertblock}
+\begin{alertblock}{git push \textit{remote} \textit{branch}}
+Отправляет изменения из локальной ветки в удаленный репозиторий.
+\end{alertblock}
+\begin{alertblock}{git pull \textit{remote} \textit{branch}}
+Загружает изменения из удаленного репозитория и объединяет их с текущей веткой.
+\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{Пример проекта в СКВ}
+\medskip
+\begin{columns}
+\column{0.5\textwidth}
+Данная презентация подготовлена с использованием СКВ \textbf{git}. Справа приведена ссылка на соответсвующий репозитой на платформе <<GitHub>>.
+\column{0.5\textwidth}
+\qrcode{https://github.com/mrtree4/RUT-MIIT-beamer}
+\end{columns}
+\end{frame}
+
+\section{Домашнее задание}
+
+\begin{frame}
+\frametitle{Подготовка доклада}
+На основе созданного шаблона написать доклад про архитектуру 16-разрядных микропроцессоров Intel 8086.
+\begin{exampleblock}{Требования}
+\begin{itemize}
+\item использовать систему контроля версий;
+\item объём от 10 страниц;
+\item использовать источники с портала eLibary и Киберленинка;
+\item сортировать список использованных источников по фамилиям авторов
+\item должны быть формулы, таблицы и картинки.
+\end{itemize}
+\end{exampleblock}
+\end{frame}
 
 \end{document}
