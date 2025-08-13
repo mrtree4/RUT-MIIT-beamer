@@ -81,21 +81,17 @@ BibLaTeX --- менеджер библиографии.
 
 \begin{frame}
 \frametitle{Способы управления библиографией}
-Выбор стиля осуществляется через параметр \texttt{style=\texit{stylename}} при вызове \texttt{\textbf{\textbackslash usepackage}}).
-Параметр \texttt{sorting=\texit{sortname}} определяет критерий сортировки источников в библиографическом списке.
-% Please add the following required packages to your document preamble:
-% \usepackage[table,xcdraw]{xcolor}
-% Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
+Выбор стиля осуществляется через параметр \texttt{style=stylename} при вызове \texttt{\textbf{\textbackslash usepackage}}).
+Параметр \texttt{sorting=option} определяет критерий сортировки источников в библиографическом списке.
+
 \begin{table}[]
-\begin{tabular}{
->{\columncolor[HTML]{FFFFFF}}l |
->{\columncolor[HTML]{FFFFFF}}l }
-{\color[HTML]{1B222C} \textbf{опция}} & {\color[HTML]{1B222C} \textbf{характеристика}}                   \\ \hline
-{\color[HTML]{495365} nty}            & {\color[HTML]{1B222C} сортировка по имени, названию, году}       \\
-{\color[HTML]{495365} nyt}            & {\color[HTML]{1B222C} сортировка по имени, году, названию}       \\
-{\color[HTML]{495365} nyvt}           & {\color[HTML]{1B222C} сортировка по имени, году, тому, названию} \\
-{\color[HTML]{495365} ...}            & {\color[HTML]{1B222C} и иные комбинации этих букв}               \\
-{\color[HTML]{495365} none}           & {\color[HTML]{1B222C} сортировка по порядку цитирования}        
+	\begin{tabular}{ll}
+\textbf{опция} & \textbf{характеристика}                   \\ \hline
+nty            & сортировка по имени, названию, году       \\
+nyt            & сортировка по имени, году, названию       \\
+nyvt           & сортировка по имени, году, тому, названию \\
+...            & и иные комбинации этих букв               \\
+none           & сортировка по порядку цитирования        
 \end{tabular}
 \end{table}
 \end{frame}
