@@ -1,6 +1,10 @@
 \documentclass[aspectratio=169]{beamer}
 
 \usepackage{tikz}
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{lstfiracode}
+
 \newbool{russian}
 \booltrue{russian}  % Загружает русскоязычный логотип
 \usepackage{theme/theme} % Подгружаем тему
@@ -65,17 +69,23 @@ BibLaTeX --- менеджер библиографии.
 \frametitle{Пример использования BibLaTeX}
 \end{frame}
 
-\begin{frame}[fragile]
+\begin{frame}
 \frametitle{Пример использования BibLaTeX}
 \medskip
 \begin{columns}
 \column{0.5\textwidth}
 
-\texttt{Text enclosed inside \texttt{verbatim} environment}
-
-\texttt{is printed directly}
-
-\texttt{and all \LaTeX{} commands are ignored.}
+\begin{code}
+		\begin{minted}{ruby}
+class Foo
+def init
+pi = Math::PI
+@var = "Pi = #{pi}..."
+end
+end
+\end{minted}
+		\caption{Да, это опять функциональный код.}
+	\end{code}
 
 \column{0.5\textwidth}
 \begin{tikzpicture}
